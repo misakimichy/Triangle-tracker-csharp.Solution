@@ -9,18 +9,16 @@ namespace TriangleTracker
     {
       Console.WriteLine("Make a triangle!");
       Console.WriteLine("Please enter the number for side 1");
-      string input1 = Console.ReadLine();
-      int side1 = int.Parse(input1);
+      int side1 = int.Parse(Console.ReadLine());
 
       Console.WriteLine("Please enter the number for side 2");
-      string input2 = Console.ReadLine();
-      int side2 = int.Parse(input2);
+      int side2 = int.Parse(Console.ReadLine());
 
       Console.WriteLine("Please enter the number for side 3");
-      string input3 = Console.ReadLine();
-      int side3 = int.Parse(input3);
+      int side3 = int.Parse(Console.ReadLine());
       
-      string result = Triangle.trackTriangle(side1, side2, side3);
+      Triangle inputTriangle = new Triangle();
+      string result = inputTriangle.IsTriangle(side1, side2, side3);
 
       if (result == "Equilateral")
       {
@@ -28,7 +26,7 @@ namespace TriangleTracker
       }
       else if (result == "Isosceles")
       {
-        Console.WriteLine("It's isosceles!. Exactly 2 sides are equal.");
+        Console.WriteLine("It's isosceles! Exactly 2 sides are equal.");
       }
       else if (result == "Scalene")
       {
