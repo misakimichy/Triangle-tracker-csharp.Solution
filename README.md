@@ -1,6 +1,6 @@
 # Triangle Tracker
 
-#### _C#, .NET: Triangle Tracker, 9/24/2019_
+#### _C#, .NET: Triangle Tracker, 12/16/2019_
 
 ## Description
 Create a Triangle Tracker console application which allows the user to input the lengths of the sides of a triangle, and returns whether these sides form an equilateral, isosceles, or scalene triangle or if the sides cannot make a triangle at all.
@@ -18,6 +18,16 @@ Create a Triangle Tracker console application which allows the user to input the
     - Isosceles: Exactly 2 sides are equal;
     - Scalene: No sides are equal.
 - Not all combinations make valid triangles. If any side is longer than the other two sides combined, the lengths cannot form a triangle. For example, 2, 2, and 8 does not make a triangle. Make sure to account for this.
+
+
+## Unit Testing
+| User input | Expected output |
+| :------------- | :------------- |
+| 3, 3, 6 | This is not a triangle. |
+| 5, 5, 5 | This is not a equilateral. |
+| 3, 4, 5 | This is not a scalene. |
+| 8, 8, 5 | This is not a isosceles. |
+
 
 ## Setup/Installation Requirements
 
