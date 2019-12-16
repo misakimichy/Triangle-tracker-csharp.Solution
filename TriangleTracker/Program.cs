@@ -20,22 +20,7 @@ namespace TriangleTracker
       Triangle inputTriangle = new Triangle();
       string result = inputTriangle.IsTriangle(side1, side2, side3);
 
-      if (result == "Equilateral")
-      {
-        Console.WriteLine("It's equilater! All sides are equal.");
-      }
-      else if (result == "Isosceles")
-      {
-        Console.WriteLine("It's isosceles! Exactly 2 sides are equal.");
-      }
-      else if (result == "Scalene")
-      {
-        Console.WriteLine("It's scalene! No isdes are equal.");
-      }
-      else if (result == "Not a triangle")
-      {
-        Console.WriteLine("This is not a triangle!");
-      }
+      Console.WriteLine($"This is {result}.");
     }
   }
 }
