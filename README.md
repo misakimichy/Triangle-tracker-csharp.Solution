@@ -33,7 +33,7 @@ Create a Triangle Tracker console application which allows the user to input the
 
 1. Clone this repo:
 ```
-$ git clone https://github.com/misakimichy/triangle-tracker-csharp.git
+$ git clone https://github.com/misakimichy/Triangle-tracker-csharp.Solution.git
 ```
 
 2. Go into the repo and run this application:
